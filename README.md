@@ -20,8 +20,8 @@ Backend "Logic"
  
 There will be a fixed register for the new items, lambda functions will be deployed using Python SDK.
 
-### **Some resource for the project**
-#### Static web-site configuration
+### **Some resources for the project**
+#### Static web-site configuration (AWS)
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html
 
 #### How to configure a index.html document
@@ -32,4 +32,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsRe
 
 #### Redirect
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-page-redirect.html
+
+#### Terraform documentation
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 
