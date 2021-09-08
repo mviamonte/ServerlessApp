@@ -38,3 +38,5 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-page-redirect.html#
 #### Terraform documentation
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 
+#### In case of emergency...
+https://itnext.io/how-to-build-a-serverless-app-with-s3-and-lambda-in-15-minutes-b14eecd4ea89
