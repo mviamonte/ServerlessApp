@@ -11,7 +11,7 @@ In the index.html there is a HTML template with two buttons.
 This index will be at the definition of the site using static site S3 feature. **@Andy** is going to "make up" a little bit the index.html 
 
 ## **Stage 2** --> Connect the index.html with the backend
-How should I connect the functions  (backend) of my index.html. Using an internal API? HTTP API or REST? The connection is direct from the bucket?
+How should I connect the functions  (backend) of my index.html. Using an internal API? HTTP API or REST? The connection is direct from the bucket? For the moment, in the s3 static website configuration (the index.html bucket) I can add redirection rules pointing to API (HTTP or REST) external URL. Basically I can redirect to another object within the bucket or to a external resource (URL) 
 
 ## **Stage 3** --> The backend logic and the code
 Backend "Logic"
@@ -21,8 +21,10 @@ Backend "Logic"
 There will be a fixed register for the new items, lambda functions will be deployed using Python SDK.
 
 ### **Some resources for the project**
-#### Static web-site configuration (AWS)
+#### Static web-site configuration (AWS) and website endpoints
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html
 
 #### How to configure a index.html document
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/IndexDocumentSupport.html
