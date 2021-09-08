@@ -30,8 +30,10 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/IndexDocumentSupport.html
 #### Set permissions for S3 bucket
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html
 
-#### Redirect
+#### Redirect and redirect rules examples
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-page-redirect.html
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-page-redirect.html#redirect-rule-examples
 
 #### Terraform documentation
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
