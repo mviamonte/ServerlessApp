@@ -9,7 +9,7 @@
                 "s3:GetObject"
             ],
             "Resource": [
-                "arn:aws:s3:::cb_s3_static_site/*"
+                "arn:aws:s3:::cbs3staticsite/*"
             ]
         }
     ]
