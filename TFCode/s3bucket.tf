@@ -5,18 +5,16 @@ resource "aws_s3_bucket" "cb" {
 
   website {
     index_document = "index.html"
-    error_document = "error.html" #To define
-}
-}
-/***    routing_rules = <<EOF
+    error_document = "error.html"
+    routing_rules = <<EOF
 [{
-    "Condition": {  |E
-        "KeyPrefixEquals": "docs/"
+    "Condition": {  
+        "KeyPrefixEquals": "putobject.html"
     },
     "Redirect": {
-        "ReplaceKeyPrefixWith": "documents/"
+        "Hostname": "www.google.com"
     }
 }]
 EOF
   }
-}***/
+}
