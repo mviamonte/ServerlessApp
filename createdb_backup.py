@@ -6,7 +6,18 @@ response = client.create_table(
             'AttributeName': 'ID',
             'AttributeType': 'N'           
         },
-
+        {
+            'AttributeName': 'PetName',
+            'AttributeType': 'S'           
+        },
+        {
+            'AttributeName': 'PetType',
+            'AttributeType': 'S'           
+        },
+        {
+            'AttributeName': 'PetColour',
+            'AttributeType': 'S'
+        },
 ],
 TableName= 'PetsDB',
 KeySchema=[
@@ -14,7 +25,18 @@ KeySchema=[
             'AttributeName': 'ID',
             'KeyType': 'HASH'
         },
-
+        {
+            'AttributeName': 'PetName',
+            'KeyType': 'RANGE'
+        },
+        {
+            'AttributeName': 'PetType',
+            'KeyType': 'RANGE'
+        },
+        {
+            'AttributeName': 'PetColour',
+            'KeyType': 'RANGE'
+        },
 ],
 BillingMode='PROVISIONED',
     ProvisionedThroughput={
