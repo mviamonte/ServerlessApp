@@ -7,25 +7,41 @@ response = client.create_table(
             'AttributeType': 'N'           
         },
         {
-            'AttributeName': 'Customer',
+            'AttributeName': 'PetName',
             'AttributeType': 'S'           
         },
+        {
+            'AttributeName': 'PetType',
+            'AttributeType': 'S'           
+        },
+        {
+            'AttributeName': 'PetColour',
+            'KeyType': 'RANGE'
+        },
 ],
-TableName= 'CustomerDB',
+TableName= 'PetsDB',
 KeySchema=[
         {
             'AttributeName': 'ID',
             'KeyType': 'HASH'
         },
         {
-            'AttributeName': 'Customer',
+            'AttributeName': 'Pet',
+            'KeyType': 'RANGE'
+        },
+        {
+            'AttributeName': 'PetType',
+            'KeyType': 'RANGE'
+        },
+        {
+            'AttributeName': 'PetColour',
             'KeyType': 'RANGE'
         },
 ],
 BillingMode='PROVISIONED',
     ProvisionedThroughput={
-        'ReadCapacityUnits': 1,
-        'WriteCapacityUnits': 1
+        'ReadCapacityUnits': 5,
+        'WriteCapacityUnits': 5
     },
     StreamSpecification={
         'StreamEnabled': False,
@@ -33,7 +49,7 @@ BillingMode='PROVISIONED',
     Tags=[
         {
             'Key': 'Name',
-            'Value': 'TestingDB'
+            'Value': 'Pets'
         },
     ]
 )
