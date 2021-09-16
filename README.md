@@ -15,7 +15,7 @@ How should I connect the functions  (backend) of my index.html. Using an interna
 
 ## **Stage 3** --> The backend logic and the code
 Backend "Logic"
-  -Deploy the code to PUT information in the previously created database using Dynamo.
+  -Deploy the code to PUT information in the previously created database using DynamoDB. I had test a few options using the Python boto3. Haven't tested on Lambda. But the Python code for table creation is done and the put item is tested. Maybe I should include some update qty of items (just an idea).
   -Deploy the code to GET all the register from the DATABASE. Note, in some point, how to show the informatión will be a problem (maybe). 
  
 There will be a fixed register for the new items, lambda functions will be deployed using Python SDK.
